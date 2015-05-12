@@ -1,5 +1,5 @@
 def build(infrastructure):
-    instance = infrastructure.create_instance(id=args.name)
+    instance = infrastructure.create_instance('wordpress-example')
 
     instance.provision()
     instance.setup_generic_php()
